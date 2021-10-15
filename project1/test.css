@@ -52,7 +52,7 @@ button{
   flex-wrap: wrap;
 }
 
-.social{
+#social{
 	position:  absolute;
   padding: 5px;
   width: calc(18% - 20px);
@@ -154,6 +154,18 @@ button{
   padding: 5px;
   width: calc(18% - 20px);
   top: 437px;
+  left: 15px;
+  max-width: 240px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#metaphor{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 660px;
   left: 15px;
   max-width: 240px;
   margin: 7.5px;
@@ -276,6 +288,17 @@ position:  absolute;
   color: black;
   text-align: left;
 }
+#pine{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 300px;
+  left: 884px;
+  max-width: 105px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
 
 #mushroom{
 	position:  absolute;
@@ -288,6 +311,7 @@ position:  absolute;
   color: black;
   text-align: left;
 }
+
 
 #link_mushroom{
 	padding: 5px;
@@ -309,11 +333,24 @@ position:  absolute;
   color: black;
   text-align: left;
 }
-#capitalocene{
+
+#growth{
 	position:  absolute;
   padding: 5px;
   width: calc(18% - 20px);
   top: 180px;
+  left: 1004px;
+  max-width: 240px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#capitalocene{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 190px;
   left: 1259px;
   max-width: 105px;
   margin: 7.5px;
@@ -383,7 +420,10 @@ button:selected {
 	box-shadow: 0px 0px 0px;
 }
 
-
+#button_0{
+	font-size: 15pt;
+	color: #3afc35;
+}
 
 #texture{
 position: absolute;
@@ -407,9 +447,9 @@ float: left;
 	 }
 
 
-#secret, #capitalist, #capitalocene, #rain, #link_junya,
+#social, #link_social, #secret, #capitalist, #capitalocene, #rain, #junya, #link_junya,
  #test, #link_test, #zhuangzi, #veneration, #link_johanna, #biotopes, #old,#link_old, #veneration, #link_zhuangzi,
-  #sad, #link_sad, #link_capitalocene, #capitalocene, #rainforest, #link_rainforest, #link_selfish, #selfish{
+  #sad, #link_sad, #link_capitalocene, #capitalocene, #rainforest, #link_rainforest, #link_selfish, #selfish, #link_secret{
 -webkit-filter: blur(8px);
 -moz-filter: blur(8px);
 -o-filter: blur(8px);
@@ -420,8 +460,8 @@ opacity: 1;
 animation: movieSkew 6s linear infinite alternate;
 }
 
-#physical, #zhuangzi_1, #johanna, #junya, #link_biotopes, #link_physical, #damage,
- #link_damage, #cartier, #link_exhibit, #link_logging, #early, #link_early, #talk, #link_talk, #mushroom, #link_mushroom{
+#physical, #zhuangzi_1, #johanna, #link_biotopes, #link_physical, #pine, #link_pine, #metaphor, #link_metaphor, #damage, #growth, #link_growth,
+ #link_damage, #cartier, #link_exhibit, #link_logging, #early, #link_early, #link_noticing, #talk, #link_talk, #mushroom, #link_mushroom{
 	-webkit-filter: blur(8px);
 -moz-filter: blur(8px);
 -o-filter: blur(8px);

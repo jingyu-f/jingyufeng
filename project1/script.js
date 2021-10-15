@@ -23,7 +23,18 @@ $('#button0').click(function(e){
         'opacity':'1',
         'animation': 'movieSkew_clear 2s',
     })
-})
+
+$('#link_secret').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'opacity':'1',
+        'color':'#3afc35',
+        'animation': 'movieSkew_clear 2s',
+    })
+  })
 
 $('#button_creatures').click(function(e){
 	e.preventDefault();
@@ -51,7 +62,28 @@ $('#button_physical').click(function(e){
         'opacity':'1',
         'animation': 'movieSkew_clear 2s',
     })
+    $('#junya').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'color':'black',
+        'opacity':'1',
+        'animation': 'movieSkew_clear 2s',
+    })
     $('#link_physical').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'opacity':'1',
+        'color':'#3afc35',
+        'animation': 'movieSkew_clear 2s',
+    })
+
+    $('#link_junya').css({
 		'-webkit-filter':'none',
         '-moz-filter':'none',
         '-o-filter':'none',
@@ -149,6 +181,17 @@ $('#button_capitalist').click(function(e){
         'opacity':'1',
         'animation': 'movieSkew_clear 2s',
     })
+
+    $('#link_noticing').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'opacity':'1',
+        'color':'#3afc35',
+        'animation': 'movieSkew_clear 2s',
+    })
     $('#capitalocene').css({
 		'-webkit-filter':'none',
         '-moz-filter':'none',
@@ -212,30 +255,6 @@ $('#button_landscape').click(function(e){
     })
     $('#physical').css({
 		'display': 'none',
-    })
- })
-
-$('#button_junya').click(function(e){
-	e.preventDefault();
-	$('#junya').css({
-		'-webkit-filter':'none',
-        '-moz-filter':'none',
-        '-o-filter':'none',
-        '-ms-filter':'none',
-        'filter':'none',
-        'color':'black',
-        'opacity':'1',
-        'animation': 'movieSkew_clear 3s',
-    })
-    $('#link_junya').css({
-		'-webkit-filter':'none',
-        '-moz-filter':'none',
-        '-o-filter':'none',
-        '-ms-filter':'none',
-        'filter':'none',
-        'opacity':'1',
-        'color':'#3afc35',
-        'animation': 'movieSkew_clear 2s',
     })
  })
 
@@ -519,7 +538,7 @@ $('#button_capitalist').click(function(e){
         'color':'#3afc35',
         'animation': 'movieSkew_clear 2s',
     })
-  })
+})
 
 $('#button_rainforest').click(function(e){
 	e.preventDefault();
@@ -545,88 +564,125 @@ $('#button_rainforest').click(function(e){
     })
   })
 
+$('#button_growth').click(function(e){
+	e.preventDefault();
+	$('#growth').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'color':'black',
+        'opacity':'1',
+        'animation': 'movieSkew_clear 3s',
+    })
+    $('#link_growth').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'opacity':'1',
+        'color':'#3afc35',
+        'animation': 'movieSkew_clear 2s',
+    })
+     $('#mushroom').css({
+		'display': 'none',
+    })
+  })
+
+$('#button_metaphor').click(function(e){
+	e.preventDefault();
+	$('#metaphor').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'color':'black',
+        'opacity':'1',
+        'animation': 'movieSkew_clear 3s',
+    })
+    $('#link_metaphor').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'opacity':'1',
+        'color':'#3afc35',
+        'animation': 'movieSkew_clear 2s',
+    })
+  })
+
+$('#button_pine').click(function(e){
+	e.preventDefault();
+	$('#pine').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'color':'black',
+        'opacity':'1',
+        'animation': 'movieSkew_clear 3s',
+    })
+    $('#link_pine').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'opacity':'1',
+        'color':'#3afc35',
+        'animation': 'movieSkew_clear 2s',
+    })
+  })
+
+$('#button_0').click(function(e){
+	e.preventDefault();
+	$('#social').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'color':'black',
+        'opacity':'1',
+        'animation': 'movieSkew_clear 3s',
+    })
+    $('#link_social').css({
+		'-webkit-filter':'none',
+        '-moz-filter':'none',
+        '-o-filter':'none',
+        '-ms-filter':'none',
+        'filter':'none',
+        'opacity':'1',
+        'color':'#3afc35',
+        'animation': 'movieSkew_clear 2s',
+    })
+
+    $('#question').css({
+		'display': 'none',
+    })
+     $('#intro').css({
+		'display': 'none',
+    })
+  })
 
 
-//let button1 = document.querySelector('#button1');
-//let itemc = document.querySelector('#talk');
 
 
-	button1.addEventListener('click', ()=>{
-	  itemc.classList.toggle('reveal');
-	})
 
-	let button_physical = document.querySelector('#button_physical');
-	let physical = document.querySelector('#physical');
+	//let button_spiritual = document.querySelector('#button_spiritual');
+	//let spiritual = document.querySelectorAll('.hide0');
 
+	//button_spiritual.addEventListener('click', ()=>{
+	  //spiritual[0].classList.toggle('reveal');
+	  //spiritual[1].classList.toggle('reveal');
+	//})
 
-	button_physical.addEventListener('click', ()=>{
-	  physical.classList.toggle('reveal');
-	})
-
-	let button_spiritual = document.querySelector('#button_spiritual');
-	let spiritual = document.querySelectorAll('.hide0');
-
-	button_spiritual.addEventListener('click', ()=>{
-	  spiritual[0].classList.toggle('reveal');
-	  spiritual[1].classList.toggle('reveal');
-	})
-
-	let button_zhuangzi = document.querySelector('#button_zhuangzi');
-	let zhuangzi = document.querySelector('#zhuangzi_1');
-
-
-	button_zhuangzi.addEventListener('click', ()=>{
-	  zhuangzi.classList.toggle('reveal');
-	})
-
-	let button_damage= document.querySelector('#button_damage');
-	let damage = document.querySelector('#damage');
-
-
-	button_damage.addEventListener('click', ()=>{
-	  damage.classList.toggle('reveal');
-	 })
-
-	  let button_biotopes= document.querySelector('#button_biotopes');
-	let biotopes = document.querySelector('#biotopes');
-
-
-	button_biotopes.addEventListener('click', ()=>{
-	 biotopes.classList.toggle('reveal');
-	})
-
-	  let button_junya= document.querySelector('#button_junya');
-	let junya = document.querySelector('#junya');
-
-
-	button_junya.addEventListener('click', ()=>{
-	 junya.classList.toggle('reveal');
-	})
-
-	  let button_deforestation= document.querySelector('#button_deforestation');
-	let cartier = document.querySelector('#cartier');
-
-
-	button_deforestation.addEventListener('click', ()=>{
-	 cartier.classList.toggle('reveal');
-	})
-
-	  let button_old= document.querySelector('#button_old');
-	let old = document.querySelector('#old');
-
-
-	button_old.addEventListener('click', ()=>{
-	 old.classList.toggle('reveal');
-	})
-
-	  let button_logging= document.querySelector('#button_logging');
-	let early= document.querySelector('#early');
-
-
-	button_logging.addEventListener('click', ()=>{
-	 early.classList.toggle('reveal');
-	})
-
+	
 
   
 
