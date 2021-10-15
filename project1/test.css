@@ -1,0 +1,503 @@
+@font-face{
+	font-family: la_nord;
+	src:  url(La_Nord_Regular.otf);
+}
+@font-face{
+	font-family: scala_sans;
+	src:  url(ScalaSans-LightItalic.otf);
+}
+
+body{
+	height: 100vh;
+	background-size: 100vh;
+	background-repeat: no-repeat;
+	background: rgb(147,252,252);
+	background: linear-gradient(180deg, rgba(147,252,252,1) 0%, rgba(241,255,240,0.5) 23%, rgba(175,224,171,0.51) 82%, rgba(170,255,168,0.28) 90%);
+	background-attachment: fixed;
+}
+
+div{
+	font-family: la_nord;
+	font-size: 9pt;
+}
+
+button{
+	font-family: la_nord;
+	font-size: 9pt;
+}
+#question{
+	font-family:  scala_sans;
+	font-size: 18pt;
+	position:  absolute;
+	width: 600px;
+	top:  400px;
+	right:  300px;
+	text-align:  left;
+}
+
+
+#intro{
+	font-size: 13pt;
+	position:  absolute;
+	width: 600px;
+	top:  600px;
+	right:  300px;
+	text-align:  left;
+}
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 600px;
+  left: 764px;
+  max-width: 240px;
+  min-width: 140px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#secret{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  min-width: 100px;
+  max-width: 240px;
+  top: 505px;
+  left: 389px;
+  height: 200px;
+  margin: 7.5px;
+  text-align: left;
+}
+#talk{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 600px;
+  left: 1019px;
+  max-width: 103px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+#sad{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 600px;
+  left: 1137px;
+  max-width: 240px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+#rainforest{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 600px;
+  left: 1392px;
+  max-width: 105px;
+  max-height: 30px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#selfish{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 740px;
+  left: 1392px;
+  max-width: 105px;
+  max-height: 30px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+#physical{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 55px;
+  left: 134px;
+  max-width: 240px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#johanna{
+	position:  absolute;
+  padding: 50px;
+  width: calc(18% - 20px);
+  top: 30px;
+  left: 30px;
+  max-width: 240px;
+  margin: 7.5px;
+  z-index: 0;
+
+}
+
+
+#zhuangzi{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 437px;
+  left: 15px;
+  max-width: 240px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#zhuangzi_1{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 505px;
+  left: 270px;
+  max-width: 104px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#veneration{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 260px;
+  left: 509px;
+  max-width: 240px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#old{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 260px;
+  left: 764px;
+  max-width: 105px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#biotopes{
+position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 55px;
+  left: 389px;
+  max-width: 105px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#junya{
+position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 330px;
+  left: 389px;
+  max-width: 105px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+  z-index: 10;
+}
+
+
+
+#damage{
+position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 5px;
+  left: 509px;
+  max-width: 105px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+.wrapper{
+	width: 240px;
+}
+
+#cartier{
+	overflow:  hidden;
+position:  absolute;
+  padding: 2px;
+  width: calc(18% - 20px);
+  top: 1px;
+  left: 629px;
+  max-width: 240px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#test{
+	overflow: hidden;
+position:  absolute;
+  padding: 2px;
+  top: 60px;
+  left: 629px;
+  max-width: 240px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#early{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 90px;
+  left: 884px;
+  max-width: 105px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#mushroom{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 90px;
+  left: 1004px;
+  max-width: 240px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+#link_mushroom{
+	padding: 5px;
+	position:  absolute;
+	top: 540px;
+	left: 1004px;
+	margin: 7.5px;
+	text-align: left;
+}
+
+#capitalist{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 90px;
+  left: 1259px;
+  max-width: 105px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+#capitalocene{
+	position:  absolute;
+  padding: 5px;
+  width: calc(18% - 20px);
+  top: 180px;
+  left: 1259px;
+  max-width: 105px;
+  margin: 7.5px;
+  color: black;
+  text-align: left;
+}
+
+  /*grid-template-columns: [first] 12% [line2] 12% [line3] 12% [col4-start] 12% [five] 12% [six] 12% [seven] 12% [eight] 12% [nine] 12% [ten] 12% [eleven] 12% [twelve] 12% [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+  background-color: blue;
+}
+
+.item-a {
+  grid-column-start: 2;
+  grid-column-end: line3;
+  grid-row-start: row1-start;
+  grid-row-end: 4;
+  background-color: red;
+}
+*/
+a:link{
+	font-family: la_nord;
+	font-size: 12pt;
+	color: #00ff99;
+	display: inline-block;
+}
+
+a:visited{
+	font-family: la_nord;
+	font-size: 12pt;
+	color: #3afc35;
+	display: inline-block;
+}
+
+.hide{
+	visibility:  hidden;
+}
+.hide0{
+	visibility:  hidden;
+}
+.reveal{
+	visibility:  visible;
+}
+
+button {
+	border-radius:  15px;
+	margin: -1px;
+	border: none;
+	background-color: white;
+	color: grey;
+	box-shadow: 0px 4px 10px rgba(46, 229, 157, 0.4);
+}
+
+button:hover {
+	background-color: transparent;
+}
+
+button:active {
+	background-color: transparent;
+}
+button:focus {
+	background-color: transparent;
+	box-shadow: 0px 0px 0px;
+}
+button:selected {
+	background-color: transparent;
+	box-shadow: 0px 0px 0px;
+}
+
+
+
+#texture{
+position: absolute;
+width: 300px;
+height: 400px;
+top: 500px;
+color: blue;
+padding: 20px;
+float: left;
+}
+
+
+::-moz-selection {
+	background: white;
+	color: #00ff99;
+	}
+
+
+::selection {
+	background: #00ff99;
+	 }
+
+
+#secret, #capitalist, #capitalocene, #rain, #link_junya,
+ #test, #link_test, #zhuangzi, #veneration, #link_johanna, #biotopes, #old,#link_old, #veneration, #link_zhuangzi,
+  #sad, #link_sad, #link_capitalocene, #capitalocene, #rainforest, #link_rainforest, #link_selfish, #selfish{
+-webkit-filter: blur(8px);
+-moz-filter: blur(8px);
+-o-filter: blur(8px);
+-ms-filter: blur(8px);
+filter: blur(5px);
+color: grey;
+opacity: 1;
+animation: movieSkew 6s linear infinite alternate;
+}
+
+#physical, #zhuangzi_1, #johanna, #junya, #link_biotopes, #link_physical, #damage,
+ #link_damage, #cartier, #link_exhibit, #link_logging, #early, #link_early, #talk, #link_talk, #mushroom, #link_mushroom{
+	-webkit-filter: blur(8px);
+-moz-filter: blur(8px);
+-o-filter: blur(8px);
+-ms-filter: blur(8px);
+filter: blur(5px);
+color: grey;
+opacity: 0.8;
+animation: movieSkew0 5s linear infinite alternate;
+
+}
+
+/*#talk, #sad{
+	-webkit-filter: blur(10px);
+-moz-filter: blur(10px);
+-o-filter: blur(10px);
+-ms-filter: blur(10px);
+filter: blur(8px);
+color: grey;
+opacity: 0.7;
+animation: movieSkew0 6s linear infinite alternate;
+}
+
+@keyframes movieSkew0 {
+  0% {
+        transform:  translateY(0);  
+  }
+  50% {
+    color: white;
+    transform: translateY(50px) skewX(-10deg);
+  }
+  100% {
+  	opacity: 0.8;
+    transform:translateY(70px) skewY(10deg);
+  }  
+}*/
+
+@keyframes movieSkew {
+  0% {
+        transform:  translateY(0);  
+  }
+  50% {
+    color: white;
+    transform: translateY(10px) skewX(5deg);
+  }
+  100% {
+  	opacity: 0.8;
+    transform:translateY(15px) skewY(10deg);
+  }  
+}
+
+@keyframes movieSkew0 {
+  0% {
+        transform:  translateY(0);  
+  }
+  60% {
+    color: white;
+    transform: translateY(5px) skewX(-5deg);
+  }
+  100% {
+  	opacity: 0.8;
+    transform:translateY(10px) skewY(5deg);
+  }  
+}
+
+@keyframes movieSkew_clear {
+  0% {
+  	opacity: 0.2;
+       transform:  translateY(2px) skewY(5deg);  
+  }
+  50% {
+  	opacity: 0.5;
+    transform: translateY(1px) skewX(-2deg);
+  }
+  100% {
+  	opacity: 1;
+    transform:translateY(0px) skewX(0deg);
+  }  
+}
+
