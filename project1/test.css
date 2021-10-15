@@ -33,6 +33,7 @@ button{
 	top:  400px;
 	right:  300px;
 	text-align:  left;
+	animation: movieSkew_clear 3s;
 }
 
 
@@ -43,6 +44,7 @@ button{
 	top:  600px;
 	right:  300px;
 	text-align:  left;
+	animation: movieSkew_clear 3s;
 }
 
 
