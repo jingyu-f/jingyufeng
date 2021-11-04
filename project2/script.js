@@ -44,7 +44,7 @@ if (now >= 585 && now <= 600) {
   choice = 'Charles Young<br><i>Violin</i>';
 }
 //10:00-13:00 demo
-if (now >= 600 && now <= 700) {
+if (now >= 600 && now <= 800) {
   choice = 'Béla Fleck<br><i>Improvisatio</i>';
   document.getElementById('bela_fleck').style = "display: none";
   //document.getElementById('bela_fleck').src += "?&autoplay=1";
