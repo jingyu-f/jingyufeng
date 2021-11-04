@@ -48,7 +48,8 @@ if (now >= 600 && now <= 700) {
   choice = 'Béla Fleck<br><i>Improvisatio</i>';
   document.getElementById('bela_fleck').style = "display: none";
   //document.getElementById('bela_fleck').src += "?&autoplay=1";
-  document.getElementById('rieko_aizawa').src += "?&autoplay=1&playlist=ZucYKlsCFxs&loop=1";
+  document.getElementById('rieko_aizawa').src += "?&autoplay=1";
+  //document.getElementById('rieko_aizawa').src += "?&autoplay=1&playlist=ZucYKlsCFxs&loop=1";
 }
 
 if (now >= 1320 && now <= 1500) {
