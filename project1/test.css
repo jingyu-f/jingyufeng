@@ -376,14 +376,14 @@ position:  absolute;
 a:link{
 	font-family: la_nord;
 	font-size: 12pt;
-	color: #00ff99;
+	color: black;
 	display: inline-block;
 }
 
 a:visited{
 	font-family: la_nord;
 	font-size: 12pt;
-	color: #3afc35;
+	color: black;
 	display: inline-block;
 }
 
