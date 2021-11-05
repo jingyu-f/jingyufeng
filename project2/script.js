@@ -29,7 +29,7 @@ var now = time * 60 + date.getMinutes();
 
 //12:00-2:00
 //12:00-12:12
-if (now >= 0 && now <= 12) {
+if (now >= 0 && now <= 100) {
   choice ='Rieko Aizawa <i>Piano</i>';
   document.getElementById('rieko_aizawa').style.display = "none";
   document.getElementById('rieko_aizawa').src += "?&autoplay=1";
@@ -61,6 +61,10 @@ else{
   
 }
 
+if (now >=0 && now <= 120){
+  document.getElementById('am12-2').style.display = "block";
+}
+
 console.log(now);
 document.getElementById('result').innerHTML = choice;
 console.log(choice);
@@ -80,6 +84,7 @@ console.log(time_bg);
 if (4 >= time_bg >= 0){
   document.body.style.backgroundColor = 'rgb(0,0,0)';
   document.getElementById('result').style.color = 'rgb(255,255,255)';
+  document.getElementById('list').style.color = 'rgb(255,255,255)';
 }
 
 if (8 >= time_bg){
@@ -91,6 +96,7 @@ document.getElementById("result").style.color = 'rgb(' + (255-r) + ',' +(255-g) 
 document.getElementById('container_title').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 document.getElementById('detail').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 document.getElementById('result').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
+document.getElementById('list').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 }
 
 else if (time_bg <= 16){
@@ -140,6 +146,8 @@ const line_height = (viewportHeight / 24) * line_hour ;
 console.log(viewportHeight);
 console.log(line_height);
 document.getElementById('vl').style.height = '' + line_height + 'px';
+document.getElementById('hl').style.top += '' + line_height + 'px';
+document.getElementById('am12-2').style.top = '' + line_height + 'px';
 //}
 
 })

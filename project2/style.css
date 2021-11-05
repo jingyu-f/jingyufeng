@@ -61,7 +61,7 @@ div{
   font-size: 40pt;
   color: blue;
   position: absolute;
-  right: 10%;
+  right: 15%;
   z-index: 4;
 }
 #container_title{
@@ -88,9 +88,17 @@ div{
   border-left: 3px solid blue;
   height: 10px;
   position: absolute;
-  right: 6%;
+  right: 180px;
   margin-left: -3px;
   top: 0;
+}
+.hl {
+  position: absolute;
+  border: 1px solid blue;
+  width: 140px;
+  right: 20px;
+  top: 5px;
+ 
 }
 
 #detail{
@@ -110,4 +118,18 @@ div{
   top: 300px;
   left: 100px;
 
+}
+
+#list{
+  font-size: 7pt;
+  line-height: 1;
+}
+#am12-2{
+  display: none;
+  position: absolute;
+  right:  20px;
+  font-size: 10pt;
+  line-height: 1.1;
+  color: grey;
+  margin-top: 6px;
 }
