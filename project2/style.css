@@ -88,7 +88,7 @@ div{
   border-left: 3px solid blue;
   height: 10px;
   position: absolute;
-  right: 180px;
+  left: 89%;
   margin-left: -3px;
   top: 0;
 }
@@ -104,7 +104,7 @@ div{
 #detail{
   position: absolute;
   top: 20px;
-  font-size: 11pt;
+  font-size: 10pt;
   margin-left: 20px;
   margin-top: 20px;
   dispaly: inline-block;
@@ -127,9 +127,41 @@ div{
 #am12-2{
   display: none;
   position: absolute;
-  right:  20px;
-  font-size: 10pt;
-  line-height: 1.1;
+  left:  90%;
+  font-size: 9pt;
+  line-height: 1.2;
+  color: grey;
+  max-width: 130px;
+  margin-top: 6px;
+}
+
+#am2-4{
+  display: none;
+  max-width: 130px;
+  position: absolute;
+  left:  90%;
+  font-size: 9pt;
+  line-height: 1.2;
   color: grey;
   margin-top: 6px;
+}
+#am4-6{
+  display: none;
+  max-width: 130px;
+  position: absolute;
+  left:  90%;
+  font-size: 9pt;
+  line-height: 1.2;
+  color: grey;
+  margin-top: 6px;
+}
+#am6-8{
+  display: none;
+  max-width: 130px;
+  position: absolute;
+  left:  90%;
+  font-size: 9pt;
+  line-height: 1.2;
+  color: blue;
+  margin-top: 0px;
 }

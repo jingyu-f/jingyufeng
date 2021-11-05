@@ -28,41 +28,48 @@ var time = date.getHours();
 var now = time * 60 + date.getMinutes();
 
 //12:00-2:00
-//12:00-12:12
-if (now >= 0 && now <= 100) {
+if (now >= 0 && now <= 120) {
   choice ='Rieko Aizawa <i>Piano</i>';
   document.getElementById('rieko_aizawa').style.display = "none";
-  document.getElementById('rieko_aizawa').src += "?&autoplay=1";
-  
+  document.getElementById('rieko_aizawa').src += "?&autoplay=1"; 
+  document.getElementById('am12-2').style.display = "block";
 } 
-//if time is between 9:30 to 9:45
-if (now >= 570 && now <= 585) {
-  choice ='Sarah Jarosz <i>Vocal/Guitar</i>';
+
+//2:00-4:00
+if (now >= 121 && now <= 240) {
+  choice ='Timo Andres <i>Piano</i>';
+  document.getElementById('timo_andres').style.display = "none";
+  document.getElementById('timo_andres').src += "?&autoplay=1"; 
+  document.getElementById('am2-4').style.display = "block";
 } 
-//9:45-10:00
-if (now >= 585 && now <= 600) {
-  choice = 'Charles Young<br><i>Violin</i>';
+//4:00-6:00
+if (now >= 241 && now <= 360) {
+  choice = 'Benjamin Beilman<br><i>Violin</i>';
+  document.getElementById('benjamin_beilman').style.display = "none";
+  document.getElementById('benjamin_beilman').src += "?&autoplay=1"; 
+  document.getElementById('am4-6').style.display = "block";
 }
-//10:00-13:00 demo
-if (now >= 600 && now <= 900) {
-  choice = 'Béla Fleck<br><i>Improvisatio</i>';
-  document.getElementById('bela_fleck').style = "display: none";
+
+//6:00-8:00
+if (now >= 361 && now <= 480) {
+  choice = 'Alessio Bax<br><i>Piano</i>';
+  document.getElementById('alessio_bax').style = "display: none";
   //document.getElementById('bela_fleck').src += "?&autoplay=1";
-  document.getElementById('rieko_aizawa').src += "?&autoplay=1";
+  document.getElementById('alessio_bax').src += "?&autoplay=1";
+  document.getElementById('am6-8').style.display = "block";
   //document.getElementById('rieko_aizawa').src += "?&autoplay=1&playlist=ZucYKlsCFxs&loop=1";
 }
 
-if (now >= 1320 && now <= 1500) {
+if (now >= 600 && now <= 1500) {
   choice = 'Béla Fleck<br><i>Improvisatio</i>';
   document.getElementById('bela_fleck').src += "?&autoplay=1";
 }
 else{
   document.getElementById('rieko_aizawa').style.display = "none";
+  document.getElementById('timo_andres').style.display = "none";
+  document.getElementById('benjamin_beilman').style.display = "none";
+  document.getElementById('alessio_bax').style.display = "none";
   
-}
-
-if (now >=0 && now <= 120){
-  document.getElementById('am12-2').style.display = "block";
 }
 
 console.log(now);
@@ -70,8 +77,7 @@ document.getElementById('result').innerHTML = choice;
 console.log(choice);
 console.log(date);
 //!!!!!important!!!!!!!! time must be in const. no var. otherwise it won't work!!!!!!!!!!!!!
-const time_bg = date.getHours();
-console.log(time_bg);
+
 
 //test time
 // if (time_bg < 17){
@@ -81,28 +87,33 @@ console.log(time_bg);
 //   console.log('true');
 // }
 
-if (4 >= time_bg >= 0){
+const time_bg = date.getHours();
+console.log(time_bg);
+if (4 > time_bg > 0){
   document.body.style.backgroundColor = 'rgb(0,0,0)';
   document.getElementById('result').style.color = 'rgb(255,255,255)';
-  document.getElementById('list').style.color = 'rgb(255,255,255)';
+  document.getElementById('container_title').style.color = 'rgb(255,255,255)';
+  document.getElementById('detail').style.color = 'rgb(255,255,255)';
+  document.getElementById('am12-2').style.color = 'rgb(255,255,255)';
+  document.getElementById('am2-4').style.color = 'rgb(255,255,255)';
 }
 
-if (8 >= time_bg){
-var r = parseInt(time)*30;
-var g = parseInt(time)*30;
-var b = parseInt(time)*30;
-document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-document.getElementById("result").style.color = 'rgb(' + (255-r) + ',' +(255-g) + ',' + (255-b) + ')';
-document.getElementById('container_title').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
-document.getElementById('detail').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
-document.getElementById('result').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
-document.getElementById('list').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
+else if (8 > time_bg){
+  var r = parseInt(time)*30;
+  var g = parseInt(time)*30;
+  var b = parseInt(time)*30;
+  document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+  document.getElementById("result").style.color = 'rgb(' + (255-r) + ',' +(255-g) + ',' + (255-b) + ')';
+  document.getElementById('container_title').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
+  document.getElementById('detail').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
+  document.getElementById('result').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
+  document.getElementById('am4-6').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
+  document.getElementById('am6-8').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 }
 
 else if (time_bg <= 16){
 document.body.style.backgroundColor = 'white';
   document.getElementById('result').style.color = 'black';
-
 }
 
 else if (time_bg <= 23){
@@ -113,19 +124,18 @@ document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
 document.getElementById('container_title').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 document.getElementById('detail').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 document.getElementById('result').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
-
 }
 
 else{
 document.body.style.backgroundColor = 'rgb(20,20,20)';
-document.getElementById("result").style.color = 'rgb(0,20,255)';
+document.getElementById("result").style.color = 'rgb(255,255,255)';
 }
 
 var time_0 = date.getHours();
 const angle = (parseInt(time_0)-4.5)*12 - 90;
 
 //if time is earlier than 4 am, no shadow
-if (time_0 < 4){
+if (time_0 <= 5){
   document.getElementById('shadow').style = 'display: none';
   }
 
@@ -146,8 +156,11 @@ const line_height = (viewportHeight / 24) * line_hour ;
 console.log(viewportHeight);
 console.log(line_height);
 document.getElementById('vl').style.height = '' + line_height + 'px';
-document.getElementById('hl').style.top += '' + line_height + 'px';
+//document.getElementById('hl').style.top += '' + line_height + 'px';
 document.getElementById('am12-2').style.top = '' + line_height + 'px';
+document.getElementById('am2-4').style.top = '' + line_height  + 'px';
+document.getElementById('am4-6').style.top = '' + line_height -180 + 'px';
+document.getElementById('am6-8').style.top = '' + line_height -180 + 'px';
 //}
 
 })
