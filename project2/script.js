@@ -52,24 +52,31 @@ if (now >= 241 && now <= 360) {
 
 //6:00-8:00
 if (now >= 361 && now <= 480) {
-  choice = 'Alessio Bax<br><i>Piano</i>';
+  choice = 'Alessio Bax <i>Piano</i>';
   document.getElementById('alessio_bax').style = "display: none";
   //document.getElementById('bela_fleck').src += "?&autoplay=1";
   document.getElementById('alessio_bax').src += "?&autoplay=1";
   document.getElementById('am6-8').style.display = "block";
-  //document.getElementById('rieko_aizawa').src += "?&autoplay=1&playlist=ZucYKlsCFxs&loop=1";
 }
 
-if (now >= 600 && now <= 1500) {
-  choice = 'Béla Fleck<br><i>Improvisatio</i>';
-  document.getElementById('bela_fleck').src += "?&autoplay=1";
+//8:00-10:00
+if (now >= 481 && now <= 600) {
+  choice = 'Sarah Jarosz <i>Vocal</i>';
+  document.getElementById('sarah_jarosz').style.display = "none";
+  document.getElementById('sarah_jarosz').src += "?&autoplay=1";
+  document.getElementById('am8-10').style.display = "block";
+}
+if (now >= 601 && now <= 720) {
+  choice = 'Emi Ferguson <i>Flute</i>';
+  document.getElementById('emi_ferguson').style.display = "none";
+  document.getElementById('emi_ferguson').src += "?&autoplay=1";
+  document.getElementById('am10-12').style.display = "block";
 }
 else{
   document.getElementById('rieko_aizawa').style.display = "none";
   document.getElementById('timo_andres').style.display = "none";
   document.getElementById('benjamin_beilman').style.display = "none";
   document.getElementById('alessio_bax').style.display = "none";
-  
 }
 
 console.log(now);
@@ -108,7 +115,6 @@ else if (8 > time_bg){
   document.getElementById('detail').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
   document.getElementById('result').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
   document.getElementById('am4-6').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
-  document.getElementById('am6-8').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 }
 
 else if (time_bg <= 16){
@@ -159,8 +165,10 @@ document.getElementById('vl').style.height = '' + line_height + 'px';
 //document.getElementById('hl').style.top += '' + line_height + 'px';
 document.getElementById('am12-2').style.top = '' + line_height + 'px';
 document.getElementById('am2-4').style.top = '' + line_height  + 'px';
-document.getElementById('am4-6').style.top = '' + line_height -180 + 'px';
-document.getElementById('am6-8').style.top = '' + line_height -180 + 'px';
+document.getElementById('am4-6').style.top = '' + line_height -210 + 'px';
+document.getElementById('am6-8').style.top = '' + line_height -210 + 'px';
+document.getElementById('am8-10').style.top = '' + line_height -210 + 'px';
+document.getElementById('am10-12').style.top = '' + line_height -190 + 'px';
 //}
 
 })
