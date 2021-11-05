@@ -164,7 +164,7 @@ else if (8 > time_bg){
   document.getElementById('am6-8').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 }
 
-else if (time_bg <= 15){
+else if (time_bg <= 18){
 document.body.style.backgroundColor = 'white';
   document.getElementById('result').style.color = 'black';
 }
