@@ -15,12 +15,12 @@ div{
 #shadow {
   content: "";
   position: absolute;
-  background-color: rgba(181, 231, 113,0.8);
+  background-color: rgba(181, 231, 113,0.9);
   width: var(--cover-width);
   height: 500px;
   transform: skewX(10deg);
   transform-origin: top center;
-  -webkit-filter: blur(5px);
+  -webkit-filter: blur(9px);
   left:  42%;
   top: 500px;
   z-index: -1;
@@ -101,10 +101,27 @@ div{
 #emi_ferguson{
   display: none;
 }
-
+#adele_anthony{
+  display: none;
+}
+#bridget_kibbey{
+  display: none;
+}
+#inon_barnatan{
+  display: none;
+}
+#bela_fleck{
+  display: none;
+}
+#brooklyn_rider{
+  display: none;
+}
+#tiffany_poon{
+  display: none;
+}
 
 #vl {
-  border-left: 3px solid blue;
+  border-left: 1px solid blue;
   height: 10px;
   position: absolute;
   left: 89%;
@@ -113,7 +130,7 @@ div{
 }
 .hl {
   position: absolute;
-  border: 1px solid blue;
+  border: 1px solid black;
   width: 140px;
   right: 20px;
   top: 5px;
@@ -181,7 +198,7 @@ div{
   left:  90%;
   font-size: 9pt;
   line-height: 1.2;
-  color: blue;
+  color: black;
   margin-top: 0px;
 }
 #am8-10{
@@ -191,7 +208,7 @@ div{
   left:  90%;
   font-size: 9pt;
   line-height: 1.2;
-  color: blue;
+  color: black;
   margin-top: 0px;
 }
 #am10-12{
@@ -201,6 +218,50 @@ div{
   left:  90%;
   font-size: 9pt;
   line-height: 1.2;
-  color: blue;
+  color: black;
+  margin-top: 0px;
+}
+
+#pm12-2{
+  display: none;
+  max-width: 130px;
+  position: absolute;
+  left:  90%;
+  font-size: 9pt;
+  line-height: 1.2;
+  color: black;
+  margin-top: 0px;
+}
+
+#pm2-4{
+  display: none;
+  max-width: 130px;
+  position: absolute;
+  left:  90%;
+  font-size: 9pt;
+  line-height: 1.2;
+  color: black;
+  margin-top: 0px;
+}
+
+#pm4-6{
+  display: none;
+  max-width: 130px;
+  position: absolute;
+  left:  90%;
+  font-size: 9pt;
+  line-height: 1.2;
+  color: black;
+  margin-top: 0px;
+}
+
+#pm6-8{
+  display: none;
+  max-width: 130px;
+  position: absolute;
+  left:  90%;
+  font-size: 9pt;
+  line-height: 1.2;
+  color: black;
   margin-top: 0px;
 }
