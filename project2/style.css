@@ -119,6 +119,9 @@ div{
 #tiffany_poon{
   display: none;
 }
+#abigel_kralik{
+  display: none;
+}
 
 #vl {
   border-left: 1px solid blue;
@@ -256,6 +259,26 @@ div{
 }
 
 #pm6-8{
+  display: none;
+  max-width: 130px;
+  position: absolute;
+  left:  90%;
+  font-size: 9pt;
+  line-height: 1.2;
+  color: black;
+  margin-top: 0px;
+}
+#pm8-10{
+  display: none;
+  max-width: 130px;
+  position: absolute;
+  left:  90%;
+  font-size: 9pt;
+  line-height: 1.2;
+  color: black;
+  margin-top: 0px;
+}
+#pm10-12{
   display: none;
   max-width: 130px;
   position: absolute;

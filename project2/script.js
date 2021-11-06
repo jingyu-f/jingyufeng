@@ -105,6 +105,18 @@ if (now >= 1081 && now <= 1200) {
   document.getElementById('tiffany_poon').src += "?&autoplay=1";
   document.getElementById('pm6-8').style.display = "block";
 }
+//20:00-22:00
+if (now >= 1201 && now <= 1320) {
+  choice = 'Abigel Kralik <i>Violin</i>';
+  document.getElementById('abigel_kralik').src += "?&autoplay=1";
+  document.getElementById('pm8-10').style.display = "block";
+}
+//22:00-0:00
+if (now >= 1321 && now <= 1440) {
+  choice = 'Emi Ferguson <i>Flute</i>';
+  document.getElementById('emi_ferguson').src += "?&autoplay=1";
+  document.getElementById('pm10-12').style.display = "block";
+}
 
 else{
   document.getElementById('rieko_aizawa').style.display = "none";
@@ -149,6 +161,7 @@ else if (8 > time_bg){
   document.getElementById('detail').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
   document.getElementById('result').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
   document.getElementById('am4-6').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
+  document.getElementById('am6-8').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 }
 
 else if (time_bg <= 15){
@@ -163,8 +176,11 @@ var b = 255-parseInt(time)*10;
 document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
 document.getElementById('container_title').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 document.getElementById('detail').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
-document.getElementById('result').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
+document.getElementById('result').style.color = 'rgb(0,0,0)';
+document.getElementById('pm4-6').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 document.getElementById('pm6-8').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
+document.getElementById('pm8-10').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
+document.getElementById('pm10-12').style.color = 'rgb(' + (255-r) + ',' + (255-g) + ',' + (255-b) + ')';
 }
 
 else{
@@ -201,13 +217,15 @@ document.getElementById('vl').style.height = '' + line_height + 'px';
 document.getElementById('am12-2').style.top = '' + line_height + 'px';
 document.getElementById('am2-4').style.top = '' + line_height  + 'px';
 document.getElementById('am4-6').style.top = '' + line_height -190 + 'px';
-document.getElementById('am6-8').style.top = '' + line_height -210 + 'px';
+document.getElementById('am6-8').style.top = '' + line_height -220 + 'px';
 document.getElementById('am8-10').style.top = '' + line_height -210 + 'px';
 document.getElementById('am10-12').style.top = '' + line_height -190 + 'px';
 document.getElementById('pm12-2').style.top = '' + line_height -210 + 'px';
 document.getElementById('pm2-4').style.top = '' + line_height -230 + 'px';
 document.getElementById('pm4-6').style.top = '' + line_height -260 + 'px';
 document.getElementById('pm6-8').style.top = '' + line_height -260 + 'px';
+document.getElementById('pm8-10').style.top = '' + line_height -200 + 'px';
+document.getElementById('pm10-12').style.top = '' + line_height -200 + 'px';
 //}
 
 })
