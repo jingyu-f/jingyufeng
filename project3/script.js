@@ -251,7 +251,7 @@ $(document).on('click', '.mybtn8', function(){
      $.getJSON('https://api.wordnik.com/v4/word.json/'+ searchWord8+ '/relatedWords?useCanonical=false&relationshipTypes=synonym&limitPerRelationshipType=10&api_key=tbg4mgdq7yh7hlnfnaz9odor7vecv30wrsdw4aas54fejyqnu', function(data) {
 
      $('.wrapper8').append('<div class="mybtn8">'+ data[0]["words"][2] + '</div>');
-     searchWor8 =  data[0]["words"][2]
+     searchWord8 =  data[0]["words"][2]
      console.log(searchWord8)
      $('.mybtn8').css('border-color', color8);
      
@@ -267,7 +267,7 @@ $(document).on('click', '.mybtn9', function(){
      $.getJSON('https://api.wordnik.com/v4/word.json/'+ searchWord9+ '/relatedWords?useCanonical=false&relationshipTypes=synonym&limitPerRelationshipType=10&api_key=tbg4mgdq7yh7hlnfnaz9odor7vecv30wrsdw4aas54fejyqnu', function(data) {
 
      $('.wrapper9').append('<div class="mybtn9">'+ data[0]["words"][2] + '</div>');
-     searchWor9 =  data[0]["words"][2]
+     searchWord9 =  data[0]["words"][2]
      console.log(searchWord9)
      $('.mybtn9').css('border-color', color9);
      
@@ -283,7 +283,7 @@ $(document).on('click', '.mybtn10', function(){
      $.getJSON('https://api.wordnik.com/v4/word.json/'+ searchWord10+ '/relatedWords?useCanonical=false&relationshipTypes=synonym&limitPerRelationshipType=10&api_key=tbg4mgdq7yh7hlnfnaz9odor7vecv30wrsdw4aas54fejyqnu', function(data) {
 
      $('.wrapper10').append('<div class="mybtn10">'+ data[0]["words"][2] + '</div>');
-     searchWor10 =  data[0]["words"][2]
+     searchWord10 =  data[0]["words"][2]
      console.log(searchWord10)
      $('.mybtn10').css('border-color', color10);
      
