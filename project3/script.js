@@ -32,7 +32,7 @@ color10 = "#" + random_color10;
 
 
 
-var name = window.prompt("type a sentence");
+var name = window.prompt("you are invited to type a sentence. (no caps/punctuations)");
 var splits = name.split(" ");
 console.log(splits);
 var apiKey = "tbg4mgdq7yh7hlnfnaz9odor7vecv30wrsdw4aas54fejyqnu";
