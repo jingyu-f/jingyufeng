@@ -2,3 +2,7 @@
 	font-family: editorial_new;
 	src:  url(EditorialNew-Ultralight.otf);
 }
+
+body{
+	background-color: #ffffe6;
+}
