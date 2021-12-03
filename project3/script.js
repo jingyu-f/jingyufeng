@@ -116,10 +116,9 @@ $(document).on('click', '.mybtn0', function(){
      $('.wrapper0').append('<div class="mybtn0">'+ data[0]["words"][2] + '</div>');
      searchWord0 =  data[0]["words"][2]
      console.log(searchWord0)
-     document.getElementById('sentence').innerHTML = searchWord0;
-
-
-     $('.mybtn0').css('border-color', color);
+     //document.getElementById('sentence').innerHTML = searchWord0;
+console.log(color);
+     $('.mybtn0').css('color', color);
 
 });
      //$(document).on('click', '.mybtn0', function(){ 
@@ -135,7 +134,7 @@ $(document).on('click', '.mybtn', function(){
      $('.wrapper').append('<div class="mybtn">'+ data[0]["words"][2] + '</div>');
      searchWord1 =  data[0]["words"][2]
      console.log(searchWord1)
-     $('.mybtn').css('border-color', color1);
+     $('.mybtn').css('color', color1);
      
  });
 
@@ -153,7 +152,7 @@ $(document).on('click', '.mybtn2', function(){
      $('.wrapper2').append('<div class="mybtn2">'+ data[0]["words"][2] + '</div>');
      searchWord2 =  data[0]["words"][2]
      console.log(searchWord2)
-     $('.mybtn2').css('border-color', color2);
+     $('.mybtn2').css('color', color2);
      
  });
 
@@ -170,7 +169,7 @@ $(document).on('click', '.mybtn3', function(){
      $('.wrapper3').append('<div class="mybtn3">'+ data[0]["words"][2] + '</div>');
      searchWord3 =  data[0]["words"][2]
      console.log(searchWord3)
-     $('.mybtn3').css('border-color', color3);
+     $('.mybtn3').css('color', color3);
      
  });
 
@@ -187,7 +186,7 @@ $(document).on('click', '.mybtn4', function(){
      $('.wrapper4').append('<div class="mybtn4">'+ data[0]["words"][2] + '</div>');
      searchWord4 =  data[0]["words"][2]
      console.log(searchWord4)
-     $('.mybtn4').css('border-color', color4);
+     $('.mybtn4').css('color', color4);
  });
 
 
@@ -203,7 +202,7 @@ $(document).on('click', '.mybtn5', function(){
      $('.wrapper5').append('<div class="mybtn5">'+ data[0]["words"][2] + '</div>');
      searchWord5 =  data[0]["words"][2]
      console.log(searchWord5)
-     $('.mybtn5').css('border-color', color5);
+     $('.mybtn5').css('color', color5);
      
  });
 
@@ -220,7 +219,7 @@ $(document).on('click', '.mybtn6', function(){
      $('.wrapper6').append('<div class="mybtn6">'+ data[0]["words"][2] + '</div>');
      searchWord6 =  data[0]["words"][2]
      console.log(searchWord6)
-     $('.mybtn6').css('border-color', color6);
+     $('.mybtn6').css('color', color6);
      
  });
 
@@ -237,7 +236,7 @@ $(document).on('click', '.mybtn7', function(){
      $('.wrapper7').append('<div class="mybtn7">'+ data[0]["words"][2] + '</div>');
      searchWord7 =  data[0]["words"][2]
      console.log(searchWord7)
-     $('.mybtn7').css('border-color', color7);
+     $('.mybtn7').css('color', color7);
      
  });
 
@@ -253,7 +252,7 @@ $(document).on('click', '.mybtn8', function(){
      $('.wrapper8').append('<div class="mybtn8">'+ data[0]["words"][2] + '</div>');
      searchWord8 =  data[0]["words"][2]
      console.log(searchWord8)
-     $('.mybtn8').css('border-color', color8);
+     $('.mybtn8').css('color', color8);
      
  });
 
@@ -269,7 +268,7 @@ $(document).on('click', '.mybtn9', function(){
      $('.wrapper9').append('<div class="mybtn9">'+ data[0]["words"][2] + '</div>');
      searchWord9 =  data[0]["words"][2]
      console.log(searchWord9)
-     $('.mybtn9').css('border-color', color9);
+     $('.mybtn9').css('color', color9);
      
  });
 
@@ -285,7 +284,7 @@ $(document).on('click', '.mybtn10', function(){
      $('.wrapper10').append('<div class="mybtn10">'+ data[0]["words"][2] + '</div>');
      searchWord10 =  data[0]["words"][2]
      console.log(searchWord10)
-     $('.mybtn10').css('border-color', color10);
+     $('.mybtn10').css('color', color10);
      
  });
 
