@@ -1,6 +1,15 @@
  $(document).ready(function(){
 console.log('script loaded');
 
+$('.list_wrapper').hide();
+$('.list_wrapper, #list').on(
+  'click',
+  function(){
+
+    $('.list_wrapper, #list').toggle()
+  }
+);
+
 function checkTime(i) {
   if (i < 10) {
     i = "0" + i;
