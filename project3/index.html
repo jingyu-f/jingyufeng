@@ -12,7 +12,12 @@
 <body>
 	<!--<div id="print"></div>-->
 <!--<div id="sentence"></div>-->
+<form>
+	<input type = 'text' id = "txt" />
+	<input type = 'submit' onclick = 'savetxt(event);'/>
+</form>
 
+<div id = 'group' style = 'display: none'>
 <div class="wrapper0"><div class="mybtn0" id="word0"></div></div>
 <div class="wrapper"><div class="mybtn" id="word1"></div></div>
 <div class="wrapper2"><div class="mybtn2" id="word2"></div></div>
@@ -24,151 +29,74 @@
 <div class="wrapper8"><div class="mybtn8" id="word8"></div></div>
 <div class="wrapper9"><div class="mybtn9" id="word9"></div></div>
 <div class="wrapper10"><div class="mybtn10" id="word10"></div></div>
+<div class="wrapper11"><div class="mybtn11" id="word11"></div></div>
+<div class="wrapper12"><div class="mybtn12" id="word12"></div></div>
+<div class="wrapper13"><div class="mybtn13" id="word13"></div></div>
+<div class="wrapper14"><div class="mybtn14" id="word14"></div></div>
+<div class="wrapper15"><div class="mybtn15" id="word15"></div></div>
+<div class="wrapper16"><div class="mybtn16" id="word16"></div></div>
+<div class="wrapper17"><div class="mybtn17" id="word17"></div></div>
+<div class="wrapper18"><div class="mybtn18" id="word18"></div></div>
+<div class="wrapper19"><div class="mybtn19" id="word19"></div></div>
+<div class="wrapper20"><div class="mybtn20" id="word20"></div></div>
+<div class="wrapper21"><div class="mybtn21" id="word21"></div></div>
+<div class="wrapper22"><div class="mybtn22" id="word22"></div></div>
+<div class="wrapper23"><div class="mybtn23" id="word23"></div></div>
+<div class="wrapper24"><div class="mybtn24" id="word24"></div></div>
+<div class="wrapper25"><div class="mybtn25" id="word25"></div></div>
+<div class="wrapper26"><div class="mybtn26" id="word26"></div></div>
+<div class="wrapper27"><div class="mybtn27" id="word27"></div></div>
+<div class="wrapper28"><div class="mybtn28" id="word28"></div></div>
+<div class="wrapper29"><div class="mybtn29" id="word29"></div></div>
+<div class="wrapper30"><div class="mybtn30" id="word30"></div></div>
+<div class="wrapper31"><div class="mybtn31" id="word31"></div></div>
+<div class="wrapper32"><div class="mybtn32" id="word32"></div></div>
+<div class="wrapper33"><div class="mybtn33" id="word33"></div></div>
+<div class="wrapper34"><div class="mybtn34" id="word34"></div></div>
+<div class="wrapper35"><div class="mybtn35" id="word35"></div></div>
+<div class="wrapper36"><div class="mybtn36" id="word36"></div></div>
+<div class="wrapper37"><div class="mybtn37" id="word37"></div></div>
+<div class="wrapper38"><div class="mybtn38" id="word38"></div></div>
+<div class="wrapper39"><div class="mybtn39" id="word39"></div></div>
+<div class="wrapper40"><div class="mybtn40" id="word40"></div></div>
+</div>
 
 
 <style>
 div{
-	font-family: editorial_new;
+	font-family: editorial_new_thin;
 	font-size: 17pt;
-	width: 110px;
-	height: 60px;
+	width: fit-content;
+	padding: 10px;
+	height: auto;
 	top: 50%;
+}
+
+.mybtn0, .mybtn, .mybtn2, .mybtn3, .mybtn4, .mybtn5, .mybtn6, .mybtn7, .mybtn8, .mybtn9, .mybtn10, .mybtn11, .mybtn12, .mybtn13, .mybtn14, .mybtn15, .mybtn16, .mybtn17, .mybtn18, .mybtn19, .mybtn20, .mybtn21, .mybtn22, .mybtn23, .mybtn24, .mybtn25, .mybtn26, .mybtn27, .mybtn28, .mybtn29, .mybtn30, .mybtn31, .mybtn32, .mybtn33, .mybtn34, .mybtn35, .mybtn36, .mybtn37, .mybtn38, .mybtn39, .mybtn40
+{
+border: solid 1px;
+cursor: pointer;
+text-align: center;
+border-radius: 20px;
+}
 
 
-}
-.mybtn0 
-{border: solid 2px;
-cursor: pointer;
-text-align: center;
-border-radius: 15px;
-
-}
-.mybtn 
-{border: solid 2px;
-cursor: pointer;
-text-align: center;
-border-radius: 15px;
-}
-.mybtn2 
-{border: solid 2px;
-cursor: pointer;
-text-align: center;
-border-radius: 15px;
-}
-.mybtn3 
-{border: solid 2px;
-cursor: pointer;
-text-align: center;
-border-radius: 15px;
-}
-.mybtn4 
-{border: solid 2px;
-cursor: pointer;
-text-align: center;
-border-radius: 15px;
-}
-.mybtn5 
-{border: solid 2px;
-cursor: pointer;
-text-align: center;
-border-radius: 15px;
-}
-.mybtn6 
-{border: solid 2px;
-cursor: pointer;
-text-align: center;
-border-radius: 15px;
-}
-.mybtn7 
-{border: solid 2px;
-cursor: pointer;
-text-align: center;
-border-radius: 15px;
-}
-.mybtn8
-{border: solid 2px;
-cursor: pointer;
-text-align: center;
-border-radius: 15px;
-}
-.mybtn9 
-{border: solid 2px;
-cursor: pointer;
-text-align: center;
-border-radius: 15px;
-}
-.mybtn10 
-{border: solid 2px;
-cursor: pointer;
-text-align: center;
-border-radius: 15px;
-}
 .wrapper0{
-position: absolute;
-left: 0px;
-top: 0px;
+position: relative;
+display: inline-block;
+top: 5px;
+
 text-align: center;
 }
-.wrapper{
-position: absolute;
-left: 120px;
-top: 0px;
+.wrapper, .wrapper2, .wrapper3, .wrapper4, .wrapper5, .wrapper6, .wrapper7, .wrapper8, .wrapper9, .wrapper10, .wrapper11, .wrapper12, .wrapper13, .wrapper14, .wrapper15, .wrapper16, .wrapper17, .wrapper18, .wrapper19, .wrapper20, .wrapper21, .wrapper22, .wrapper23, .wrapper24, .wrapper25, .wrapper26, .wrapper27, .wrapper28, .wrapper29, .wrapper30, .wrapper31, .wrapper32, .wrapper33, .wrapper34, .wrapper35, .wrapper36, .wrapper37, .wrapper38, .wrapper39, .wrapper40{
+position: relative;
+display: inline-block;
+top: 5px;
+
 text-align: center;
 }
-.wrapper2{
-position: absolute;
-left: 240px;
-top: 0px;
-text-align: center;
-}
-.wrapper3{
-position: absolute;
-left: 360px;
-top: 0px;
-text-align: center;
-}
-.wrapper4{
-position: absolute;
-left: 480px;
-top: 0px;
-text-align: center;
-}
-.wrapper5{
-position: absolute;
-left: 600px;
-top: 0px;
-text-align: center;
-}
-.wrapper6{
-position: absolute;
-left: 720px;
-top: 0px;
-text-align: center;
-}
-.wrapper7{
-position: absolute;
-left: 840px;
-top: 0px;
-text-align: center;
-}
-.wrapper8{
-position: absolute;
-left: 960px;
-top: 0px;
-text-align: center;
-}
-.wrapper9{
-position: absolute;
-left: 1080px;
-top: 0px;
-text-align: center;
-}
-.wrapper10{
-position: absolute;
-left: 1200px;
-top: 0px;
-text-align: center;
-}
+
+
 .sentence{
 	position: fixed;
 	bottom: 20px;

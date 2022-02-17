@@ -2,7 +2,37 @@
 	font-family: editorial_new;
 	src:  url(EditorialNew-Ultralight.otf);
 }
+@font-face{
+	font-family: editorial_new_thin;
+	src: url(EditorialNew-Thin.otf);
+}
+@font-face{
+	font-family: editorial_new_italic;
+	src: url(PPEditorialNew-UltralightItalic.otf);
+}
 
 body{
+/*	background-color:#f8f9f9;*/
 	background-color: #ffffe6;
+}
+
+input[type=submit]{
+	border: solid 1px;
+	border-radius: 20px;
+	height: 40px;
+	background: white;
+	font-family: editorial_new;
+	font-size: 12pt;
+	text-align: center;
+	top: 50%;
+}
+
+input[type="text"]{
+	border: solid 1px;
+	border-radius: 20px;
+	background: white;
+	width: 400px;
+	height: 40px;
+	font-family: editorial_new_italic;
+	font-size: 12pt;
 }
