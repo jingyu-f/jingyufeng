@@ -11,6 +11,10 @@
 	src: url(PPEditorialNew-UltralightItalic.otf);
 }
 
+h1{
+	font-family: editorial_new_thin;
+	font-size: 30pt;
+}
 body{
 /*	background-color:#f8f9f9;*/
 	background-color: #ffffe6;
@@ -18,21 +22,22 @@ body{
 
 input[type=submit]{
 	border: solid 1px;
-	border-radius: 20px;
-	height: 40px;
-	background: white;
+	border-radius: 5px;
+	margin: 3px;
+	height: 30px;
+	background: #ffffe6;
 	font-family: editorial_new;
-	font-size: 12pt;
+	font-size: 14pt;
 	text-align: center;
 	top: 50%;
 }
 
 input[type="text"]{
-	border: solid 1px;
-	border-radius: 20px;
-	background: white;
-	width: 400px;
-	height: 40px;
+	border: none;
+	border-bottom: 1px solid;
+	background-color: #ffffe6;
+	width: 550px;
+	height: 30px;
 	font-family: editorial_new_italic;
 	font-size: 12pt;
 }

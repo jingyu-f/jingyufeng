@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div id="time"></div>
+    <div id="time" style="font-family: Eiko;"></div>
     
-    <div id="container_title"><div id="musicneversleeps">Music Never Sleeps NYC</div>
-    <div id="info">Livestream over a 24-hour period<br>March 27 at 6:00PM EDT.</div>
-  </div>
+    <div id="container_title" style="display:none;"><div id="musicneversleeps">Music Never Sleeps NYC</div>
+    <div id="info"  style="font-family: Eiko;">Livestream over a 24-hour period, March 27 at 6:00PM EDT.</div></div>
 
-  <div id="detail">"The Coronavirus global crisis has changed all of our lives drastically and has shut down every performing arts institution and venue we artists call our homes. While practicing at home on the Upper West Side, I realized that we can still contribute something during the fight against this pandemic.<br><br>After hours of conversations with my New York-based friends and colleagues I understood they are more eager than ever to express their artistry. These friends and colleagues have agreed to create original performance content for Music Never Sleeps NYC to be livestreamed over a 24-hour period beginning on March 27 at 6:00PM EDT.<br><br>We will all unite to send a musical message of courage, empathy, friendship, hope and love from New York to the entire world. We also encourage those watching Music Never Sleeps NYC to support various New York charitable causes that directly benefit New York-based artists. Please join us to celebrate music and joy during hard times!"<br><br>Jan Vogler</div>
+
+  <div id="about">About</div>
+  <div id="detail"><div id="detailid"><span style="font-family: Eiko;">Livestream over a 24-hour period, March 27 at 6:00PM EDT.</span><br>Music Never Sleeps NYC<br>Jan Vogle<br></div></div>
+  <div id="description"style="font-size: 9pt; line-height: 1.3; position:absolute; top: 120px; left: 30px;width:180px; color:grey;">The Coronavirus global crisis has changed all of our lives drastically and has shut down every performing arts institution and venue we artists call our homes. While practicing at home on the Upper West Side, I realized that we can still contribute something during the fight against this pandemic.<br><br>After hours of conversations with my New York-based friends and colleagues I understood they are more eager than ever to express their artistry. These friends and colleagues have agreed to create original performance content for Music Never Sleeps NYC to be livestreamed over a 24-hour period beginning on March 27 at 6:00PM EDT.<br><br>We will all unite to send a musical message of courage, empathy, friendship, hope and love from New York to the entire world. We also encourage those watching Music Never Sleeps NYC to support various New York charitable causes that directly benefit New York-based artists. Please join us to celebrate music and joy during hard times!"</div>
 
   <div class="list_wrapper">
     <div id=“scrollable_list” style="
@@ -384,13 +386,14 @@ Anthony Roth Costanzo
 </div>
 </div>
 
+<!--     <div class="crop"><img src="png.png"></div> -->
     <div id="text_container">
-      <div id="result"></div>
+      <div id="result" style="font-family: Eiko;"></div>
       <iframe id="bela_fleck" width="200" src="https://www.youtube-nocookie.com/embed/yYl4f2cZn2A" frameborder="0"allow="autoplay;encrypted-media"allowfullscreen=""></iframe>
       <iframe id="rieko_aizawa" width="200" src="https://www.youtube-nocookie.com/embed/ggBuqD59BJE" frameborder="0"allow="autoplay;encrypted-media"allowfullscreen=""></iframe>
       <iframe id="timo_andres" width="200" src="https://www.youtube.com/embed/POQ4HdwPVL4" frameborder="0"allow="autoplay;encrypted-media"allowfullscreen=""></iframe>
       <iframe id="benjamin_beilman" width="200" src="https://www.youtube.com/embed/iaKRtyNm46U" frameborder="0"allow="autoplay;encrypted-media"allowfullscreen=""></iframe>
-      <iframe id="alessio_bax" width="200" src="https://www.youtube.com/embed/a3aXuJaU8FM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="alessio_bax" width="200" height="400" src="https://www.youtube.com/embed/a3aXuJaU8FM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe id="sarah_jarosz" src="https://www.youtube.com/embed/5k4XtF-OXUw" frameborder="0"allow="autoplay;encrypted-media"allowfullscreen=""></iframe>
       <iframe id="emi_ferguson" src="https://www.youtube.com/embed/jvWzIWyNCpg" frameborder="0"allow="autoplay;encrypted-media"allowfullscreen=""></iframe>
       <iframe id="adele_anthony" src="https://www.youtube.com/embed/tIFG_YKXZ-0" frameborder="0"allow="autoplay;encrypted-media"allowfullscreen=""></iframe>
@@ -404,7 +407,7 @@ Anthony Roth Costanzo
     </div>
 
     <div id="container">
-    <div id="shadow"><!-<div id="result"></div></div>
+    <div id="shadow" class="overlay"></div><div id="result" class="overlay"></div>
   </div>
 
 <!--toggle artists' name & time at the margin-->

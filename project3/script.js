@@ -99,7 +99,7 @@ function savetxt(event){
      var name = document.getElementById('txt').value;
      event.preventDefault();
      console.log(name);
-var punctuationless = name.replace(/[.,\/#!$%@\^&\*;:{}=\-_`~()]/g,"");
+var punctuationless = name.replace(/[.,\/#!$%@''\^&\*;:{}=\-_`~()]/g,"");
 var text = punctuationless.toLowerCase();
 var splits = text.split(" ");
 console.log(splits);
@@ -948,7 +948,7 @@ $(document).on('click', '.mybtn30', function(){
      searchWord30 =  data[0]["words"][value]
      console.log(searchWord30)
      $('.mybtn30').css('color', color30);
-     $('.wrappe30').css('color', color30);    
+     $('.wrapper30').css('color', color30);    
  });
 });
 
