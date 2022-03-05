@@ -424,15 +424,15 @@ console.log(value);
 
 $(document).on('click', '.mybtn0', function(){
      $(this).removeClass('mybtn0');
-	$.getJSON('https://api.wordnik.com/v4/word.json/'+ searchWord0+ '/relatedWords?useCanonical=false&relationshipTypes=synonym&limitPerRelationshipType=15&api_key=tbg4mgdq7yh7hlnfnaz9odor7vecv30wrsdw4aas54fejyqnu', function(data) {
+	$.getJSON('https://api.wordnik.com/v4/word.json/'+ searchWord0+ '/relatedWords?useCanonical=false&relationshipTypes=synonym&limitPerRelationshipType=21&api_key=tbg4mgdq7yh7hlnfnaz9odor7vecv30wrsdw4aas54fejyqnu', function(data) {
 
-     $('.wrapper0').append('<div class="mybtn0">'+ data[0]['words'][value] + '</div>');
+     $('.wrapper0').append('<div class="mybtn0">'+ data[0]['words'][16] + '</div>');
 
-     searchWord0 =  data[0]['words'][value]
+     searchWord0 =  data[0]['words'][16]
      console.log(searchWord0)
 console.log(color);
-     $('.mybtn0').css('color', color);
-     $('.wrapper0').css('color', color);
+     $('.mybtn0').css('color', 'grey');
+     $('.wrapper0').css('color', 'grey');
 
 });
      

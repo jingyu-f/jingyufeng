@@ -11,11 +11,11 @@ $('.list_wrapper, #list').on(
 );
 
 $('#about').hide();
-$('#about, #detail').on(
+$('#about, #description').on(
   'click',
   function(){
 
-    $('#about, #detail').toggle()
+    $('#about, #description').toggle()
   }
 );
 
@@ -96,7 +96,7 @@ if (now >= 721 && now <= 780) {
 }
 //13:00-14:00
 if (now >= 781 && now <= 840) {
-  choice = 'Bridget Kibbey (Harp)';
+  choice = '15: Bridget Kibbey (Harp)';
   document.getElementById('bridget_kibbey').src += "?&autoplay=1";
   document.getElementById('pm12-2').style.display = "block";
 }
@@ -133,17 +133,17 @@ if (now >= 1201 && now <= 1320) {
 }
 //22:00-0:00
 if (now >= 1321 && now <= 1440) {
-  choice = 'Emi Ferguson (Flute)';
+  choice = '122: Emi Ferguson (Flute)';
   document.getElementById('emi_ferguson').src += "?&autoplay=1";
   document.getElementById('pm10-12').style.display = "block";
 }
 
-else{
+
   document.getElementById('rieko_aizawa').style.display = "none";
   document.getElementById('timo_andres').style.display = "none";
   document.getElementById('benjamin_beilman').style.display = "none";
   document.getElementById('alessio_bax').style.display = "none";
-}
+
 
 console.log(now);
 document.getElementById('result').innerHTML = choice;
@@ -219,7 +219,9 @@ console.log(angle_text);
 
 var random_color = Math.floor(Math.random()*16777215).toString(16);
 color1 = "#" + random_color;
+console.log(color1);
 document.getElementById('shadow').style = 'background-color:' + color1;
+document.getElementById('shadow').style = 'background-color: #3e374c';
 
 //if time is earlier than 4 am, no shadow
 if (time_0 <= 5){
@@ -228,7 +230,7 @@ if (time_0 <= 5){
 
 else if (time_0 >= 20){
   document.getElementById('shadow').style = 'display: none';
-  document.getElementById('result').style.transform = 'rotate('+ angle_text + 'deg)';
+  // document.getElementById('result').style.transform = 'rotate('+ angle_text + 'deg)';
   }
 
 else{

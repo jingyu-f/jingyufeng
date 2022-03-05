@@ -52,7 +52,7 @@ div{
    line-height: 1.5;
    left:30%;
   position: absolute;
-  top: 400px;
+  top: 350px;
   z-index: -1;
     /*transform: rotate(-90deg);
     transform-origin: top center;*/
@@ -174,7 +174,9 @@ div{
   line-height: 1.2;
 }
 #about{
-  position: absolute;
+  text-decoration: underline;
+  position: relative;
+  top: 130px;
   margin-left: 20px;
 }
 .fa{
@@ -182,7 +184,6 @@ div{
   display: inline-block;
   top: 300px;
   left: 100px;
-
 }
 
 #list{
