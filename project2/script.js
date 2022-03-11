@@ -169,6 +169,9 @@ if (5 > time_bg > 0){
   document.getElementById('detail').style.color = 'rgb(255,255,255)';
   document.getElementById('am12-2').style.color = 'rgb(255,255,255)';
   document.getElementById('am2-4').style.color = 'rgb(255,255,255)';
+  document.getElementById('time').style.color = 'white';
+  document.getElementById('description').style.color = 'white';
+  document.getElementById('vl').style.border = '1px solid white';
 }
 
 else if (8 > time_bg){
@@ -186,7 +189,7 @@ else if (8 > time_bg){
 
 else if (time_bg <= 17){
 document.body.style.backgroundColor = 'white';
-  document.getElementById('result').style.color = 'black';
+document.getElementById('result').style.color = 'black';
 }
 
 else if (time_bg <= 23){
@@ -201,7 +204,8 @@ document.getElementById('pm4-6').style.color = 'white';
 document.getElementById('pm6-8').style.color = 'white';
 document.getElementById('pm8-10').style.color = 'white';
 document.getElementById('pm10-12').style.color = 'white';
-document.getElementById('vl').style = 'border-left: 1px solid white';
+document.getElementById('time').style.color = 'white';
+document.getElementById('vl').style.border = '1px solid white';
 
 }
 
