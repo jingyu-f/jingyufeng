@@ -419,20 +419,21 @@ function randomInt(min, max){
      return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-let value = randomInt(0, 14);
+let value = randomInt(10, 35);
 console.log(value);
 
 $(document).on('click', '.mybtn0', function(){
      $(this).removeClass('mybtn0');
-	$.getJSON('https://api.wordnik.com/v4/word.json/'+ searchWord0+ '/relatedWords?useCanonical=false&relationshipTypes=synonym&limitPerRelationshipType=21&api_key=tbg4mgdq7yh7hlnfnaz9odor7vecv30wrsdw4aas54fejyqnu', function(data) {
+	$.getJSON('https://api.wordnik.com/v4/word.json/'+ searchWord0+ '/relatedWords?useCanonical=false&relationshipTypes=synonym&limitPerRelationshipType=40&api_key=tbg4mgdq7yh7hlnfnaz9odor7vecv30wrsdw4aas54fejyqnu', function(data) {
+     let value = randomInt(0, 35);
+     console.log(value);
+     $('.wrapper0').append('<div class="mybtn0">'+ data[0]['words'][value] + '</div>');
 
-     $('.wrapper0').append('<div class="mybtn0">'+ data[0]['words'][16] + '</div>');
-
-     searchWord0 =  data[0]['words'][16]
+     searchWord0 =  data[0]['words'][value]
      console.log(searchWord0)
 console.log(color);
-     $('.mybtn0').css('color', 'grey');
-     $('.wrapper0').css('color', 'grey');
+     $('.mybtn0').css('color', color);
+     $('.wrapper0').css('color', color);
 
 });
      
@@ -446,8 +447,8 @@ $(document).on('click', '.mybtn', function(){
      $(this).removeClass('mybtn');
      $.getJSON('https://api.wordnik.com/v4/word.json/'+ searchWord1+ '/relatedWords?useCanonical=false&relationshipTypes=synonym&limitPerRelationshipType=15&api_key=tbg4mgdq7yh7hlnfnaz9odor7vecv30wrsdw4aas54fejyqnu', function(data) {
 
-     $('.wrapper').append('<div class="mybtn">'+ data[0]["words"][value] + '</div>');
-     searchWord1 =  data[0]["words"][value]
+     $('.wrapper').append('<div class="mybtn">'+ data[0]["words"][13] + '</div>');
+     searchWord1 =  data[0]["words"][13]
      console.log(searchWord1)
      $('.mybtn').css('color', color1);
      $('.wrapper').css('color', color1);

@@ -56,7 +56,7 @@ if (now >= 0 && now <= 120) {
 
 //2:00-4:00
 if (now >= 121 && now <= 240) {
-  choice ='\u2460 Timo Andres (Piano)';
+  choice ='12. Timo Andres (Piano)';
   document.getElementById('timo_andres').src += "?&autoplay=1"; 
   document.getElementById('am2-4').style.display = "block";
 } 
@@ -96,7 +96,7 @@ if (now >= 721 && now <= 780) {
 }
 //13:00-14:00
 if (now >= 781 && now <= 840) {
-  choice = '15: Bridget Kibbey (Harp)';
+  choice = '79: Bridget Kibbey (Harp)';
   document.getElementById('bridget_kibbey').src += "?&autoplay=1";
   document.getElementById('pm12-2').style.display = "block";
 }
@@ -206,6 +206,7 @@ document.getElementById('pm8-10').style.color = 'white';
 document.getElementById('pm10-12').style.color = 'white';
 document.getElementById('time').style.color = 'white';
 document.getElementById('vl').style.border = '1px solid white';
+document.getElementById('description').style.color = 'white';
 
 }
 
